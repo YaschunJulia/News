@@ -1,0 +1,51 @@
+{
+  "name": "news",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "body-parser": "~1.15.1",
+    "cheerio": "^0.22.0",
+    "clean-webpack-plugin": "^0.1.10",
+    "cookie-parser": "~1.4.3",
+    "css-loader": "^0.25.0",
+    "debug": "~2.2.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^7.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "express": "~4.13.4",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "g": "^2.0.1",
+    "html": "^1.0.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "jade": "~1.11.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "morgan": "~1.7.0",
+    "ng-annotate-loader": "^0.1.1",
+    "nodemon": "^1.11.0",
+    "open-sans-fontface": "^1.4.0",
+    "serve-favicon": "~2.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "1.0.0-beta.2",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "ng-annotate": "^1.2.1",
+    "sweetalert": "^1.1.3"
+  }
+}

@@ -1,0 +1,6 @@
+<ul class="list-group" ng-repeat="item in $ctrl.news">
+  <li class="list-group-item well">
+    <h5><a ui-sref="item({itemId: item.id, title: item.title})"><span ng-bind="item.title"></span></h5></a>
+  </li>
+</ul>
+

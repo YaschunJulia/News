@@ -1,0 +1,14 @@
+{
+  "news": [
+    {
+      "title": "SpaceX rocket explodes on launch pad",
+      "html": "<div class=\"blog_item\"><div class=\"border\"><img src=\"api/images/blog1.jpg\" alt=\"img\"\/></div><div class=\"text\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh est, faucibus vitae ornare vel, rhoncus nec lacus. Sed nec massa mauris. Etiam vestibulum, est sit amet efficitur auctor, risus nunc suscipit nibh, in tempus magna nulla eget ipsum. Donec ultricies felis odio, convallis varius lacus eleifend non. Nullam venenatis, justo et lacinia malesuada, tellus magna consectetur eros, ac efficitur mauris tellus vel odio. Etiam varius hendrerit lorem at convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor iaculis pulvinar. Suspendisse condimentum massa eget libero sollicitudin congue. /n Suspendisse potenti. Sed consequat sem non consequat vulputate. Sed lobortis rhoncus sollicitudin. Donec pharetra et augue at laoreet. Proin nec aliquet leo. Vivamus augue orci, rhoncus congue aliquam ut, hendrerit vitae nibh. In in nulla quam. Integer volutpat vestibulum nunc quis mollis. Aliquam sed dui ut nunc semper rhoncus at posuere quam. Donec tristique quis est facilisis varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce massa tellus, vulputate et laoreet eu, congue ut felis.</p></div></div>",
+      "id": 1
+    },
+    {
+      "title": "New robot was build in China",
+      "html": "<div class=\"blog_item\"><div class=\"border\"><img src=\"api/images/blog2.jpg\" alt=\"img\"\/></div><div class=\"text\"><p>Suspendisse fringilla malesuada semper. Vestibulum dui lorem, efficitur et lectus sit amet, vehicula mattis augue. Duis ut felis vitae nibh convallis mollis at nec nulla. Nunc id odio ut odio vehicula molestie. Nulla facilisi. Donec sit amet accumsan tellus. Nam euismod vehicula scelerisque./nAliquam tellus purus, rhoncus eget vulputate nec, varius in mauris. Maecenas efficitur quam vel turpis facilisis sagittis. Cras non ante ut tortor egestas dapibus. Curabitur id tortor convallis, imperdiet urna ullamcorper, malesuada augue. Morbi luctus mi non augue commodo, in iaculis sapien eleifend. Fusce lobortis efficitur ligula, sit amet scelerisque libero consectetur sit amet. Integer ac ligula venenatis, iaculis dolor sed, tempor dui. Nam feugiat vestibulum massa, sit amet aliquet est. Vivamus consectetur cursus justo, id volutpat erat congue in. Nulla maximus tincidunt elit non fringilla. Duis nec tincidunt leo, nec blandit nulla. Phasellus nec urna neque. Sed viverra eros lorem, sed euismod enim suscipit et.</p></div></div>",
+      "id": 2
+    }
+  ]
+}

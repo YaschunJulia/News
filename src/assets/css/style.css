@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+.blog_item{
+	display: block;
+	padding: 10px 0;
+}
+
+.blog_item .border{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #828181;
+  }
+
+.blog_item img{
+  display: block;
+  border: 3px solid #fff;
+}
+
+.blog_item text{
+  display: block;
+  float:right;
+}
+
+footer {
+  border-top: 1px solid #a08e98;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  min-width: 90vw;
+}
+
