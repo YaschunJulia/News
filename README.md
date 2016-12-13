@@ -1,3 +1,9 @@
-npm install
-webpack
-npm start
+```
+ npm install
+```
+```
+ webpack
+```
+```
+ npm start
+```
