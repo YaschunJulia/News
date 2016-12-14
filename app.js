@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'docs')));
 
-app.use('/news/:id', (req, res, next) => {
+app.use('/news', (req, res, next) => {
   res.sendFile(__dirname + '/docs/index.html');
 });
 
@@ -34,10 +34,7 @@ app.use('/api/images', images);
 app.use('/api/list', news);
 
 app.use((req, res, next) => {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+  res.sendFile(__dirname + '/docs/index.html');
 });
-
 
 module.exports = app;
