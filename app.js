@@ -11,6 +11,9 @@ var news = require('./routes/list');
 
 var app = express();
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -34,7 +37,18 @@ app.use('/api/images', images);
 app.use('/api/list', news);
 
 app.use((req, res, next) => {
-  res.sendFile(__dirname + '/docs/index.html');
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
+
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: err
+  });
+});
+
 
 module.exports = app;

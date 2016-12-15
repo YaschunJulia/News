@@ -34,9 +34,9 @@ ng.module('app', [ngRouter, ngComponents])
       },
     },
     {
-      name: 'error',
+      name: 'err',
       url: '/error',
-      component: 'error',
+      component: 'err',
     },
   ];
   states.forEach(state => $stateProvider.state(state));

@@ -5,6 +5,7 @@ export default class wrapController {
   }
 
   $onInit() {
+    console.log('bhfgj');
     this.state.go('wrap.news');
   }
 
