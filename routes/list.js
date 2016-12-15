@@ -11,9 +11,10 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   let item = store.news.find(item => item.id === +req.params.id);
   if (item) {
-    res.status(200).json({html: `${item.html}`});
+    res.status(200).json(item);
+  } else {
+    res.sendStatus(404, '404 Not found').end();
   }
-  res.sendStatus(404, '404 Not found');
 });
 
 module.exports = router;

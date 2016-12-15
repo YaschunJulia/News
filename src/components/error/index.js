@@ -2,6 +2,6 @@ import ng from 'angular';
 
 import errorComponent from './error.component.js';
 
-export default ng.module('app.components.error', [])
- .component('error', errorComponent)
+export default ng.module('app.components.err', [])
+ .component('err', errorComponent)
  .name;

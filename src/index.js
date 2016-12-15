@@ -2,15 +2,12 @@ import ng from 'angular';
 import ngRouter from 'angular-ui-router';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'sweetalert/dist/sweetalert.min.js';
-import 'sweetalert/dist/sweetalert.css';
 
 import './assets/css/style.css';
 import ngComponents from './components';
-// import NewsService from './news_service.js';
 
 ng.module('app', [ngRouter, ngComponents])
-.config(($locationProvider, $stateProvider) => {
+.config(($locationProvider, $stateProvider, $urlRouterProvider) => {
   'ngInject';
 
   const states = [
@@ -30,16 +27,21 @@ ng.module('app', [ngRouter, ngComponents])
       component: 'item',
       params: {
         itemId: null,
-        title: null,
       },
     },
     {
       name: 'err',
       url: '/error',
       component: 'err',
+       params: {
+        status: null,
+      },
     },
   ];
   states.forEach(state => $stateProvider.state(state));
+
+  $urlRouterProvider.otherwise("/error");
+
    $locationProvider.html5Mode({
     enabled: true,
     requireBase: false

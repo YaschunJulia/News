@@ -11,8 +11,9 @@ var news = require('./routes/list');
 
 var app = express();
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.engine('.html', require('ejs').__express);
+app.set('views', __dirname + '/docs');
+app.set('view engine', 'html');
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -28,8 +29,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'docs')));
 
+
 app.use('/news', (req, res, next) => {
-  res.sendFile(__dirname + '/docs/index.html');
+  res.render('index', {
+    itemId: req.path.slice(1),
+  });
 });
 
 app.use('/', routes);
@@ -44,11 +48,9 @@ app.use((req, res, next) => {
 
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: err
+  res.render('index', {
+    itemId: 0,  
   });
 });
-
 
 module.exports = app;
